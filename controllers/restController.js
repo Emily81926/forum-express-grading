@@ -4,10 +4,9 @@ const Restaurant = db.Restaurant
 
 const restController = {
   getRestaurants: (req, res) => {
-    return Restaurant.findAll({ raw: true }).then(restaurants =>{
-      res.render('admin/restaurants', {restaurant: restaurant })
-    })  
+    return res.render('restaurants')
   }
+  
 }
 
 module.exports = restController
